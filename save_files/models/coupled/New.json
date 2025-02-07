@@ -1,0 +1,92 @@
+[
+    {
+        "model_description": ""
+    },
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "New"
+    },
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "DEVS_Model_Graphics_Item",
+        "model_name": "My_Coupled_Model",
+        "model_type": "coupled",
+        "x_pos": 3603.0,
+        "y_pos": 4137.0,
+        "id": 1337660910,
+        "set_constructor_args": [
+            {
+                "modelArg1": [
+                    "",
+                    "int"
+                ]
+            },
+            {
+                "modelArg2": [
+                    "",
+                    "float"
+                ]
+            }
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "DEVS_Model_Graphics_Item",
+        "model_name": "My_Atomic_Model",
+        "model_type": "atomic",
+        "x_pos": 4104.0,
+        "y_pos": 4138.0,
+        "id": 161171408,
+        "set_constructor_args": [
+            {
+                "modelArg": [
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+]

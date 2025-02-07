@@ -1,0 +1,126 @@
+[
+    {
+        "model_description": ""
+    },
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "",
+        "is_visible": false
+    },
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "Takeoff"
+    },
+    {
+        "obj_type": "State_Variable_Table",
+        "State_Variables": [],
+        "is_visible": false
+    },
+    {},
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [
+            {
+                "Name": "takeoff_point",
+                "Type": "int"
+            },
+            {
+                "Name": "abort_takeoff",
+                "Type": "int"
+            }
+        ],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [
+            {
+                "Name": "takeoff_complete",
+                "Type": "int"
+            },
+            {
+                "Name": "follow_mission",
+                "Type": "int"
+            }
+        ],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [],
+        "is_visible": false
+    },
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "",
+        "is_visible": false
+    },
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "____Takeoff____Complete",
+        "id": 3634033936,
+        "ta": "inf",
+        "is_initial_state": true,
+        "x_pos": 3841.0,
+        "y_pos": 3839.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "notification_color": "#26f800",
+        "notification_priority": 1,
+        "state_defs": [],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+]

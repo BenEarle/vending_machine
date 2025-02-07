@@ -1,0 +1,39 @@
+[
+    {
+        "model_description": ""
+    },
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "Top_Level_Coupled_Model"
+    },
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "",
+        "is_visible": true
+    },
+    {}
+]

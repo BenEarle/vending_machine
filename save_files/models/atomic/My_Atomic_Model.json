@@ -1,0 +1,244 @@
+[
+    {
+        "model_description": ""
+    },
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "My_Atomic_Model"
+    },
+    {
+        "obj_type": "State_Variable_Table",
+        "State_Variables": [],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [
+            {
+                "Name": "AtomicInput1",
+                "Type": "int"
+            },
+            {
+                "Name": "AtomicInput2",
+                "Type": "float"
+            }
+        ],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [
+            {
+                "Name": "AtomicOutput",
+                "Type": "int"
+            }
+        ],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [
+            {
+                "Name": "modelArg",
+                "Type": "float"
+            }
+        ],
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "First_State",
+        "id": 3242002214,
+        "ta": "0",
+        "is_initial_state": true,
+        "x_pos": 3900.0,
+        "y_pos": 4028.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "state_defs": [],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "Second_State",
+        "id": 498708385,
+        "ta": "0",
+        "is_initial_state": false,
+        "x_pos": 4138.0,
+        "y_pos": 4104.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": true,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": true,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": true,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": true,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "state_defs": [],
+        "state_defs_is_visible": true,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "Third_State",
+        "id": 461555127,
+        "ta": "0",
+        "is_initial_state": false,
+        "x_pos": 3928.0,
+        "y_pos": 4212.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": true,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": true,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": true,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": true,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "state_defs": [],
+        "state_defs_is_visible": true,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+]

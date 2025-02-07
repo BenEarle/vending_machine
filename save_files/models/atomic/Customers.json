@@ -1,0 +1,519 @@
+[
+    {
+        "model_description": ""
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "External_Transition",
+        "segments": [
+            {
+                "p1_x": 3700.0,
+                "p1_y": 4300.0,
+                "p2_x": 3700.0,
+                "p2_y": 3964.0,
+                "this_seg_id": 108555277,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": 121942638
+            },
+            {
+                "p1_x": 4134.0,
+                "p1_y": 4299.0,
+                "p2_x": 3700.0,
+                "p2_y": 4300.0,
+                "this_seg_id": 121942638,
+                "line_seg_attatched_to_head_id": 108555277,
+                "line_seg_attatched_to_tail_id": null
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "external_transition_conditions": [],
+        "external_transition_conditions_is_visible": false,
+        "external_transition_conditions_size": [
+            449,
+            200
+        ],
+        "transition_data_location_x": 3701.0,
+        "transition_data_location_y": 4148.0,
+        "state_bubble_attached_to_head_name": "____Wait_For___Customer",
+        "state_bubble_attached_to_tail_name": "Wait_For_Bev",
+        "state_bubble_attached_to_head_ta": "10",
+        "state_bubble_attached_to_tail_ta": "inf",
+        "state_bubble_attached_to_head_id": 1971029536,
+        "state_bubble_attached_to_tail_id": 2433160985,
+        "snap_attached_to_head_id": 2,
+        "snap_attached_to_tail_id": 4
+    },
+    {},
+    {},
+    {
+        "obj_type": "Internal_Transition",
+        "segments": [
+            {
+                "p1_x": 4201.0,
+                "p1_y": 3965.0,
+                "p2_x": 4199.0,
+                "p2_y": 4234.0,
+                "this_seg_id": 2714319904,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": null
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "internal_transition_conditions": [
+            {
+                "condition_row_pair": {
+                    "condtion": "state.total_input >= state.beverage_selected.price",
+                    "row": 0
+                }
+            }
+        ],
+        "internal_transition_conditions_is_visible": false,
+        "internal_transition_conditions_size": [
+            625,
+            200
+        ],
+        "output_function_box": [],
+        "output_function_box_is_visible": false,
+        "output_function_box_size": [
+            625,
+            200
+        ],
+        "transition_data_location_x": 4201.0,
+        "transition_data_location_y": 3984.0,
+        "state_bubble_attached_to_head_name": "Wait_For_Bev",
+        "state_bubble_attached_to_tail_name": "Insert_Money",
+        "state_bubble_attached_to_head_ta": "inf",
+        "state_bubble_attached_to_tail_ta": "5",
+        "state_bubble_attached_to_head_id": 2433160985,
+        "state_bubble_attached_to_tail_id": 1375708073,
+        "snap_attached_to_head_id": 6,
+        "snap_attached_to_tail_id": 2
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Internal_Transition",
+        "segments": [
+            {
+                "p1_x": 4250.0,
+                "p1_y": 3698.0,
+                "p2_x": 4155.0,
+                "p2_y": 3698.0,
+                "this_seg_id": 579541357,
+                "line_seg_attatched_to_head_id": 2625787134,
+                "line_seg_attatched_to_tail_id": 3737249714
+            },
+            {
+                "p1_x": 4246.961940777125,
+                "p1_y": 3854.0380592228744,
+                "p2_x": 4250.0,
+                "p2_y": 3698.0,
+                "this_seg_id": 3737249714,
+                "line_seg_attatched_to_head_id": 579541357,
+                "line_seg_attatched_to_tail_id": null
+            },
+            {
+                "p1_x": 4155.0,
+                "p1_y": 3698.0,
+                "p2_x": 4155.038059222875,
+                "p2_y": 3854.0380592228744,
+                "this_seg_id": 2625787134,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": 579541357
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "internal_transition_conditions": [
+            {
+                "condition_row_pair": {
+                    "condtion": "state.total_input < state.beverage_selected.price",
+                    "row": 0
+                }
+            }
+        ],
+        "internal_transition_conditions_is_visible": true,
+        "internal_transition_conditions_size": [
+            625,
+            200
+        ],
+        "output_function_box": [
+            {
+                "outputs": {
+                    "Output Port": "o_money",
+                    "bag": "amount_output"
+                }
+            }
+        ],
+        "output_function_box_is_visible": false,
+        "output_function_box_size": [
+            625,
+            200
+        ],
+        "transition_data_location_x": 4209.0,
+        "transition_data_location_y": 3546.0,
+        "state_bubble_attached_to_head_name": "Insert_Money",
+        "state_bubble_attached_to_tail_name": "Insert_Money",
+        "state_bubble_attached_to_head_ta": "5",
+        "state_bubble_attached_to_tail_ta": "5",
+        "state_bubble_attached_to_head_id": 1375708073,
+        "state_bubble_attached_to_tail_id": 1375708073,
+        "snap_attached_to_head_id": 5,
+        "snap_attached_to_tail_id": 7
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "Wait_For_Bev",
+        "id": 2433160985,
+        "ta": "inf",
+        "is_initial_state": false,
+        "x_pos": 4139.0,
+        "y_pos": 4239.0,
+        "receive_conditionS": [],
+        "port_flagS": [
+            {
+                "receive_condition": {
+                    "input Port": "___r_i_dispensed_beverage",
+                    "store": "received_bev"
+                }
+            }
+        ],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "state.total_input = 0;",
+        "external_transition_code_box_is_visible": true,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "notification_color": "#26f800",
+        "notification_priority": 1,
+        "state_defs": [
+            "state.total_input >= state.beverage_selected.price"
+        ],
+        "state_defs_is_visible": true,
+        "state_defs_size": [
+            488,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Internal_Transition",
+        "segments": [
+            {
+                "p1_x": 3765.0,
+                "p1_y": 3899.0,
+                "p2_x": 4136.0,
+                "p2_y": 3900.0,
+                "this_seg_id": 3850569669,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": null
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "internal_transition_conditions": [],
+        "internal_transition_conditions_is_visible": false,
+        "internal_transition_conditions_size": [
+            625,
+            200
+        ],
+        "output_function_box": [
+            {
+                "outputs": {
+                    "Output Port": "o_selected_beverage",
+                    "bag": "beverage_selected"
+                }
+            }
+        ],
+        "output_function_box_is_visible": false,
+        "output_function_box_size": [
+            625,
+            200
+        ],
+        "transition_data_location_x": 3817.0,
+        "transition_data_location_y": 3753.0,
+        "state_bubble_attached_to_head_name": "Insert_Money",
+        "state_bubble_attached_to_tail_name": "____Wait_For___Customer",
+        "state_bubble_attached_to_head_ta": "5",
+        "state_bubble_attached_to_tail_ta": "10",
+        "state_bubble_attached_to_head_id": 1375708073,
+        "state_bubble_attached_to_tail_id": 1971029536,
+        "snap_attached_to_head_id": 4,
+        "snap_attached_to_tail_id": 0
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "state.beverage_selected.price = 2.00;\nstate.beverage_selected.item_id = 12;\nstate.amount_output = 1.00;\nstate.total_input = 0;",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "____Wait_For___Customer",
+        "id": 1971029536,
+        "ta": "10",
+        "is_initial_state": true,
+        "x_pos": 3640.0,
+        "y_pos": 3839.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "state.received_bev = false;",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            100
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "notification_color": "#26f800",
+        "notification_priority": 1,
+        "state_defs": [
+            "state.received_bev"
+        ],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            237,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "Insert_Money",
+        "id": 1375708073,
+        "ta": "5",
+        "is_initial_state": false,
+        "x_pos": 4141.0,
+        "y_pos": 3840.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "state.total_input += state.amount_output;",
+        "internal_transition_code_box_is_visible": true,
+        "internal_transition_code_box_size": [
+            550,
+            100
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            100
+        ],
+        "notification_color": "#26f800",
+        "notification_priority": 1,
+        "state_defs": [
+            "state.total_input < state.beverage_selected.price"
+        ],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            487,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [],
+        "is_visible": false
+    },
+    {},
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "Customers"
+    },
+    {},
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [
+            {
+                "Name": "i_start_customer_activity",
+                "Type": "bool"
+            },
+            {
+                "Name": "i_change_owed",
+                "Type": "float"
+            },
+            {
+                "Name": "i_dispensed_beverage",
+                "Type": "int"
+            }
+        ],
+        "is_visible": false
+    },
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [
+            {
+                "Name": "o_selected_beverage",
+                "Type": "item_selection_t"
+            },
+            {
+                "Name": "o_money",
+                "Type": "float"
+            }
+        ],
+        "is_visible": false
+    },
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "// Include headers\n#include \"item_selection_t.hpp\"",
+        "is_visible": true
+    },
+    {},
+    {
+        "obj_type": "State_Variable_Table",
+        "State_Variables": [
+            {
+                "Name": "beverage_selected",
+                "Type": "item_selection_t"
+            },
+            {
+                "Name": "amount_output",
+                "Type": "float"
+            },
+            {
+                "Name": "total_input",
+                "Type": "float"
+            },
+            {
+                "Name": "received_bev",
+                "Type": "bool"
+            }
+        ],
+        "is_visible": true
+    },
+    {}
+]

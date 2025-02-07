@@ -1,0 +1,264 @@
+[
+    {
+        "model_description": ""
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "____Received__Message",
+        "id": 2079121531,
+        "ta": "10",
+        "is_initial_state": true,
+        "x_pos": 3875.0,
+        "y_pos": 4062.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "notification_color": "#00aaff",
+        "notification_priority": 1,
+        "state_defs": [],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {
+        "obj_type": "Constructor_Args_Table",
+        "Constructor_Args": [],
+        "is_visible": false
+    },
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Output_Port_Table",
+        "Output_Ports": [
+            {
+                "Name": "new_message",
+                "Type": "int"
+            }
+        ],
+        "is_visible": false
+    },
+    {
+        "obj_type": "Input_Port_Table",
+        "Input_Ports": [],
+        "is_visible": false
+    },
+    {
+        "obj_type": "State_Variable_Table",
+        "State_Variables": [],
+        "is_visible": false
+    },
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Constructor_Code_Box",
+        "code_box_contents": "",
+        "is_visible": false
+    },
+    {},
+    {},
+    {
+        "obj_type": "Editable_Model_Title",
+        "title": "I_O"
+    },
+    {},
+    {
+        "obj_type": "Include_Dirs_Box",
+        "include_dirs_box": "",
+        "is_visible": false
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "State_Bubble",
+        "state_name": "___Received___Message",
+        "id": 2807504269,
+        "ta": "10",
+        "is_initial_state": false,
+        "x_pos": 3878.0,
+        "y_pos": 3781.0,
+        "receive_conditionS": [],
+        "port_flagS": [],
+        "receive_conditionS_is_visible": false,
+        "receive_conditionS_size": [
+            625,
+            200
+        ],
+        "external_transition_code_box": "",
+        "external_transition_code_box_is_visible": false,
+        "external_transition_code_box_size": [
+            550,
+            150
+        ],
+        "internal_transition_code_box": "",
+        "internal_transition_code_box_is_visible": false,
+        "internal_transition_code_box_size": [
+            550,
+            150
+        ],
+        "output_function_code_box": "",
+        "output_function_code_box_is_visible": false,
+        "output_function_code_box_size": [
+            550,
+            150
+        ],
+        "notification_color": "#00aaff",
+        "notification_priority": 1,
+        "state_defs": [],
+        "state_defs_is_visible": false,
+        "state_defs_size": [
+            240,
+            100
+        ]
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Internal_Transition",
+        "segments": [
+            {
+                "p1_x": 3889.0380592228744,
+                "p1_y": 4076.0380592228744,
+                "p2_x": 3892.0380592228744,
+                "p2_y": 3886.9619407771256,
+                "this_seg_id": 1211224430,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": null
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "internal_transition_conditions": [],
+        "internal_transition_conditions_is_visible": false,
+        "internal_transition_conditions_size": [
+            625,
+            200
+        ],
+        "output_function_box": [],
+        "output_function_box_is_visible": false,
+        "output_function_box_size": [
+            625,
+            200
+        ],
+        "transition_data_location_x": 3893.0,
+        "transition_data_location_y": 3829.0,
+        "state_bubble_attached_to_head_name": "___Received___Message",
+        "state_bubble_attached_to_tail_name": "____Received__Message",
+        "state_bubble_attached_to_head_ta": "10",
+        "state_bubble_attached_to_tail_ta": "10",
+        "state_bubble_attached_to_head_id": 2807504269,
+        "state_bubble_attached_to_tail_id": 2079121531,
+        "snap_attached_to_head_id": 3,
+        "snap_attached_to_tail_id": 5
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "obj_type": "Internal_Transition",
+        "segments": [
+            {
+                "p1_x": 3983.9619407771256,
+                "p1_y": 3886.9619407771256,
+                "p2_x": 3980.9619407771256,
+                "p2_y": 4076.0380592228744,
+                "this_seg_id": 2910017640,
+                "line_seg_attatched_to_head_id": null,
+                "line_seg_attatched_to_tail_id": null
+            }
+        ],
+        "x_pos": 0.0,
+        "y_pos": 0.0,
+        "internal_transition_conditions": [],
+        "internal_transition_conditions_is_visible": false,
+        "internal_transition_conditions_size": [
+            625,
+            200
+        ],
+        "output_function_box": [],
+        "output_function_box_is_visible": false,
+        "output_function_box_size": [
+            625,
+            200
+        ],
+        "transition_data_location_x": 3989.0,
+        "transition_data_location_y": 3832.0,
+        "state_bubble_attached_to_head_name": "____Received__Message",
+        "state_bubble_attached_to_tail_name": "___Received___Message",
+        "state_bubble_attached_to_head_ta": "10",
+        "state_bubble_attached_to_tail_ta": "10",
+        "state_bubble_attached_to_head_id": 2079121531,
+        "state_bubble_attached_to_tail_id": 2807504269,
+        "snap_attached_to_head_id": 7,
+        "snap_attached_to_tail_id": 1
+    },
+    {},
+    {},
+    {}
+]
