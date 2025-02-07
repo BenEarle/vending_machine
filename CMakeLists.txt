@@ -30,6 +30,7 @@ set(includes_list
 	"${CADMIUM2_TESTING_FRAMEWORK_INCLUDE_DIR}"
 	"${CMAKE_CURRENT_SOURCE_DIR}/deps"
 	${CMAKE_CURRENT_SOURCE_DIR}/include
+	${CMAKE_CURRENT_SOURCE_DIR}
 	CACHE STRING "Test program Includes List"
 )
 
