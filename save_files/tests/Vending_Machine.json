@@ -1,80 +1,14 @@
 {
     "build_configs": "add_executable(td_Vending_Machine \"Vending_Machine/td_Vending_Machine.cpp\")\n\n\nif(WIN32)\n    # CMake configurations for windows\n    target_link_libraries(td_Vending_Machine wsock32 ws2_32)\n    target_include_directories(td_Vending_Machine PUBLIC ${includes_list})\nendif()\n\n\nif(UNIX)\n    # CMake configurations for unix\nendif()\n\n\nif(APPLE)\n    # CMake configurations for apple\n    target_link_directories(td_Vending_Machine PUBLIC /usr/local/opt/icu4c/lib)\n    target_link_libraries(td_Vending_Machine icudata)\n    target_include_directories(td_Vending_Machine PUBLIC ${includes_list})\nendif()",
     "test data": {
-        "two_inserts": {
+        "Standard_Purchase": {
             "set_constructor_args": [],
-            "State_Transitions": [
-                "____Wait_For___Selection",
-                "_____Collect____Currency",
-                "Check_Amount",
-                "_____Collect____Currency",
-                "Check_Amount",
-                "Output_Change",
-                "____Dispense___Beverage",
-                "____Wait_For___Selection"
-            ],
             "Inputs_Table": {
                 "i_beverage_selection": {
-                    "data": [
-                        [
-                            "1",
-                            "(12, 2)"
-                        ],
-                        [
-                            "10",
-                            "1"
-                        ]
-                    ],
-                    "port_type": "item_selection_t"
-                },
-                "i_money": {
                     "data": [
                         [
                             "5",
-                            "1"
-                        ]
-                    ],
-                    "port_type": "float"
-                }
-            },
-            "Outputs_Table": {
-                "o_change": {
-                    "data": [
-                        [
-                            "1",
-                            "0"
-                        ],
-                        [
-                            "2",
-                            "12"
-                        ]
-                    ],
-                    "port_type": "float"
-                }
-            }
-        },
-        "user_gets_change": {
-            "set_constructor_args": [],
-            "State_Transitions": [
-                "____Wait_For___Selection",
-                "_____Collect____Currency",
-                "Check_Amount",
-                "_____Collect____Currency",
-                "Check_Amount",
-                "Output_Change",
-                "____Dispense___Beverage",
-                "____Wait_For___Selection"
-            ],
-            "Inputs_Table": {
-                "i_beverage_selection": {
-                    "data": [
-                        [
-                            "1",
-                            "12, 2.50"
-                        ],
-                        [
-                            "12",
-                            "1"
+                            "{12, 2.50}"
                         ]
                     ],
                     "port_type": "item_selection_t"
@@ -83,73 +17,13 @@
                     "data": [
                         [
                             "10",
-                            "2"
+                            "5"
                         ]
                     ],
                     "port_type": "float"
                 }
             },
-            "Outputs_Table": {
-                "o_change": {
-                    "data": [
-                        [
-                            "1",
-                            "0.50"
-                        ],
-                        [
-                            "2",
-                            "12"
-                        ]
-                    ],
-                    "port_type": "float"
-                }
-            }
-        },
-        "one_insert": {
-            "set_constructor_args": [],
-            "Inputs_Table": {
-                "i_beverage_selection": {
-                    "data": [
-                        [
-                            "1",
-                            "30, 1"
-                        ]
-                    ],
-                    "port_type": "item_selection_t"
-                },
-                "i_money": {
-                    "data": [
-                        [
-                            "5",
-                            "1"
-                        ]
-                    ],
-                    "port_type": "float"
-                }
-            },
-            "Outputs_Table": {
-                "o_change": {
-                    "data": [
-                        [
-                            "1",
-                            "0"
-                        ],
-                        [
-                            "2",
-                            "30"
-                        ]
-                    ],
-                    "port_type": "float"
-                }
-            },
-            "State_Transitions": [
-                "____Wait_For___Selection",
-                "_____Collect____Currency",
-                "Check_Amount",
-                "Output_Change",
-                "____Dispense___Beverage",
-                "____Wait_For___Selection"
-            ]
+            "Outputs_Table": {}
         }
     }
 }

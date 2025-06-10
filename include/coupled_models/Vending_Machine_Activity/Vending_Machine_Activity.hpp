@@ -13,8 +13,9 @@ using namespace cadmium;
 // ------ Your includes list ------- 
 
  //Includes for submodels
-#include "atomic_models/Vending_Machine/Vending_Machine.hpp"
+#include "atomic_models/VM_Purchase/VM_Purchase.hpp"
 #include "atomic_models/Customers/Customers.hpp"
+#include "atomic_models/VM_Audio/VM_Audio.hpp"
 
 
 
@@ -40,17 +41,18 @@ class Vending_Machine_Activity : public Coupled {
             model_id = id;
         
  
-            auto Vending_Machine_1495258907 = addComponent<Vending_Machine>(model_id + "_1" );
+            auto VM_Purchase_863366135 = addComponent<VM_Purchase>(model_id + "_1" );
             auto Customers_559098369 = addComponent<Customers>(model_id + "_2" );
+            auto VM_Audio_3341052146 = addComponent<VM_Audio>(model_id + "_3" );
             //EICs
             addCoupling(i_start_customer_activity, Customers_559098369->i_start_customer_activity);
             //EOCs
-            addCoupling(Vending_Machine_1495258907->o_dispense_id, o_logged_dispense_id);
             //ICs
-            addCoupling(Customers_559098369->o_selected_beverage, Vending_Machine_1495258907->i_beverage_selection);
-            addCoupling(Vending_Machine_1495258907->o_change, Customers_559098369->i_change_owed);
-            addCoupling(Vending_Machine_1495258907->o_dispense_id, Customers_559098369->i_dispensed_beverage);
-            addCoupling(Customers_559098369->o_money, Vending_Machine_1495258907->i_money);
+            addCoupling(VM_Purchase_863366135->o_change, Customers_559098369->i_change_owed);
+            addCoupling(Customers_559098369->o_selected_beverage, VM_Purchase_863366135->i_beverage_selection);
+            addCoupling(VM_Purchase_863366135->o_dispense_id, Customers_559098369->i_dispensed_beverage);
+            addCoupling(Customers_559098369->o_money, VM_Purchase_863366135->i_money);
+            addCoupling(VM_Purchase_863366135->o_audio_message, VM_Audio_3341052146->i_message_to_speak);
 
 		}
 

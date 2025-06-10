@@ -29,8 +29,8 @@
             ]
         },
         "Vending_Machine_Activity": {
-            "1495258907": [
-                "Vending_Machine",
+            "863366135": [
+                "VM_Purchase",
                 "atomic",
                 1
             ],
@@ -38,6 +38,11 @@
                 "Customers",
                 "atomic",
                 2
+            ],
+            "3341052146": [
+                "VM_Audio",
+                "atomic",
+                3
             ]
         },
         "External_Messages": {
@@ -68,6 +73,18 @@
                 "atomic",
                 4
             ]
+        },
+        "Vending_Machine": {
+            "2852446593": [
+                "VM_Audio",
+                "atomic",
+                2
+            ],
+            "2023769544": [
+                "VM_Purchase",
+                "atomic",
+                1
+            ]
         }
     },
     "atomic_model_states": {
@@ -87,28 +104,6 @@
                 "notif_priority": 1
             },
             "DoSomething": {
-                "notif_color": "#26f800",
-                "notif_priority": 1
-            }
-        },
-        "Vending_Machine": {
-            "Check_Amount": {
-                "notif_color": "#26f800",
-                "notif_priority": 1
-            },
-            "_____Collect____Currency": {
-                "notif_color": "#26f800",
-                "notif_priority": 1
-            },
-            "____Dispense___Beverage": {
-                "notif_color": "#26f800",
-                "notif_priority": 1
-            },
-            "Output_Change": {
-                "notif_color": "#26f800",
-                "notif_priority": 1
-            },
-            "____Wait_For___Selection": {
                 "notif_color": "#26f800",
                 "notif_priority": 1
             }
@@ -156,6 +151,42 @@
             },
             "___Received___Message": {
                 "notif_color": "#00aaff",
+                "notif_priority": 1
+            }
+        },
+        "VM_Purchase": {
+            "____Wait_For___Selection": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "____Dispense___Beverage": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "Check_Amount": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "Output_Change": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "Blocking_State": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "_____Collect____Currency": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            }
+        },
+        "VM_Audio": {
+            "Speak": {
+                "notif_color": "#26f800",
+                "notif_priority": 1
+            },
+            "____Wait_For___Message": {
+                "notif_color": "#26f800",
                 "notif_priority": 1
             }
         }

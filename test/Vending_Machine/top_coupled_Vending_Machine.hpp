@@ -18,7 +18,7 @@
 #include <string>
 #include <cassert>
 
-#include "include/atomic_models/Vending_Machine/Vending_Machine.hpp"
+#include "include/coupled_models/Vending_Machine/Vending_Machine.hpp"
 #include "Vending_Machine_Variant_Goblin.hpp"
 
 
@@ -48,18 +48,12 @@
             auto gen_i_money			= addComponent<Generator<float>>("gen_i_money", set_test_data<float, Variant_Goblin>(test_set_enumeration, "i_money", generator_data));
 
             auto model_Vending_Machine        	= addComponent<Vending_Machine>("Vending_Machine");
-            auto comp_o_change			= addComponent<Comparator<float>>("comp_o_change", set_oracle_data<float, Variant_Goblin>(test_set_enumeration, "o_change", comparator_data));
-            auto comp_o_dispense_id			= addComponent<Comparator<int>>("comp_o_dispense_id", set_oracle_data<int, Variant_Goblin>(test_set_enumeration, "o_dispense_id", comparator_data));
 
             auto decider				= addComponent<Decider>("decider", set_path_data(test_set_enumeration, path_data), get_number_of_conditions<Variant_Goblin>(comparator_data[test_set_enumeration]), log_file_name);
             addCoupling(gen_i_beverage_selection->output_port, model_Vending_Machine->i_beverage_selection);
             addCoupling(gen_i_money->output_port, model_Vending_Machine->i_money);
 
-            addCoupling(model_Vending_Machine->o_change, comp_o_change->input_port);
-            addCoupling(model_Vending_Machine->o_dispense_id, comp_o_dispense_id->input_port);
 
-            addCoupling(comp_o_change->report_port, decider->report_port);
-            addCoupling(comp_o_dispense_id->report_port, decider->report_port);
 
 
 		}
